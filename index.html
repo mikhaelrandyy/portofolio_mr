@@ -70,9 +70,6 @@
     })();
   </script>
 
-
-       
-
 </head>
 <body class="bg-gray-50 text-gray-800 dark:bg-gray-950 dark:text-gray-100 font-sans">
 
@@ -83,7 +80,7 @@
   </div>
 
   <!-- Navbar -->
-  <header class="sticky top-0 z-50 backdrop-blur bg-white/70 dark:bg-gray-900/60 border-b border-gray-200/60 dark:border-white/10">
+  <header data-aos="fade-down" class="sticky top-0 z-50 backdrop-blur bg-white/70 dark:bg-gray-900/60 border-b border-gray-200/60 dark:border-white/10">
     <nav class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
       <a href="#" class="flex items-center gap-3">
          <img src="img/icon-dog.png" alt="icon" class="w-10 h-10 object-contain select-none rounded-full shadow-md" />
@@ -136,7 +133,7 @@
             </a>
           </div>
         </div>
-        <div data-aos="zoom-in" class="md:col-span-5" >
+        <div data-aos="fade-down" class="md:col-span-5" >
           <div class="relative mx-auto w-64 h-64 rounded-3xl bg-grid backdrop-blur border border-white/40 dark:border-white/10 shadow-soft overflow-hidden">
             <div class="absolute inset-0 bg-gradient-to-br from-white/70 to-white/10 dark:from-white/5 dark:to-white/0"></div>
             <div class="absolute -top-10 -right-10 w-40 h-40 rounded-full bg-brand-400/40 blur-2xl animate-float"></div>
@@ -234,7 +231,7 @@
 
       <div class="grid md:grid-cols-3 gap-8">
         <!-- Project Card 1 -->
-        <div class="bg-[#111827] p-6 rounded-xl shadow-lg text-white flex flex-col">
+         <div class="bg-[#111827] p-6 rounded-xl shadow-lg text-white flex flex-col transform transition-all duration-300 hover:-translate-y-2 hover:scale-105">
           <img src="img/holy_flexi.jpg" alt="Holy Flexi" class="rounded-lg h-40 object-cover mb-4">
           <h3 class="text-lg font-semibold text-pink-500 mb-2">Holy Flexi</h3>
           <p class="text-sm text-gray-300 mb-4">
@@ -250,7 +247,7 @@
         </div>
 
         <!-- Project Card 2 -->
-        <div class="bg-[#111827] p-6 rounded-xl shadow-lg text-white flex flex-col">
+         <div class="bg-[#111827] p-6 rounded-xl shadow-lg text-white flex flex-col transform transition-all duration-300 hover:-translate-y-2 hover:scale-105">
           <img src="img/laundry_web.png" alt="Laundry" class="rounded-lg h-40 object-cover mb-4">
           <h3 class="text-lg font-semibold text-pink-500 mb-2">Laundry Management System</h3>
           <p class="text-sm text-gray-300 mb-4">
@@ -266,7 +263,7 @@
         </div>
 
         <!-- Project Card 3 -->
-        <div class="bg-[#111827] p-6 rounded-xl shadow-lg text-white flex flex-col">
+         <div class="bg-[#111827] p-6 rounded-xl shadow-lg text-white flex flex-col transform transition-all duration-300 hover:-translate-y-2 hover:scale-105">
           <img src="img/matcha_web.png" alt="Matcha POS" class="rounded-lg h-40 object-cover mb-4">
           <h3 class="text-lg font-semibold text-pink-500 mb-2">Matcha Web POS</h3>
           <p class="text-sm text-gray-300 mb-4">
@@ -285,7 +282,7 @@
 
       <div class="grid md:grid-cols-3 gap-8 mt-8">
         <!-- Project Card 4 -->
-        <div class="bg-[#111827] p-6 rounded-xl shadow-lg text-white flex flex-col">
+         <div class="bg-[#111827] p-6 rounded-xl shadow-lg text-white flex flex-col transform transition-all duration-300 hover:-translate-y-2 hover:scale-105">
           <img src="img/royal_web.png" alt="Holy Flexi" class="rounded-lg h-40 object-cover mb-4">
           <h3 class="text-lg font-semibold text-pink-500 mb-2">Company Profile</h3>
           <p class="text-sm text-gray-300 mb-4">
@@ -398,9 +395,13 @@
 
 
 
-          <script src="js/aos.js"></script>
+  <script src="js/aos.js"></script>
   <script>
-    AOS.init({once: false});
+    AOS.init(
+      {
+        once: false,
+        mirror: true
+      });
   </script>
 
 </body>
